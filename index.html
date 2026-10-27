@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Política de Privacidad | SpendFlow & GastoFlow</title>
+  <meta name="description" content="Política de Privacidad oficial de SpendFlow y GastoFlow. Aplicación 100% offline, local-first y sin acceso a internet.">
+  <style>
+    :root {
+      --primary: #10b981;
+      --primary-dark: #059669;
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --border: #334155;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --accent: #38bdf8;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 2rem 1rem;
+    }
+    .container {
+      max-width: 840px;
+      margin: 0 auto;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+    .badge {
+      display: inline-block;
+      background: rgba(16, 185, 129, 0.15);
+      color: var(--primary);
+      padding: 0.35rem 0.9rem;
+      border-radius: 9999px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      border: 1px solid rgba(16, 185, 129, 0.3);
+    }
+    h1 {
+      font-size: 2.25rem;
+      font-weight: 800;
+      letter-spacing: -0.025em;
+      margin-bottom: 0.5rem;
+    }
+    .last-updated {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+    .lang-switcher {
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+      margin: 1.5rem 0;
+    }
+    .lang-btn {
+      background: var(--card-bg);
+      color: var(--text-muted);
+      border: 1px solid var(--border);
+      padding: 0.5rem 1.25rem;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    .lang-btn.active {
+      background: var(--primary);
+      color: #0f172a;
+      border-color: var(--primary);
+    }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 2rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
+    }
+    h2 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    p {
+      color: #cbd5e1;
+      margin-bottom: 1rem;
+    }
+    p:last-child {
+      margin-bottom: 0;
+    }
+    ul {
+      margin-left: 1.5rem;
+      margin-bottom: 1rem;
+      color: #cbd5e1;
+    }
+    li {
+      margin-bottom: 0.5rem;
+    }
+    .highlight-box {
+      background: rgba(56, 189, 248, 0.08);
+      border-left: 4px solid var(--accent);
+      padding: 1rem;
+      border-radius: 0 8px 8px 0;
+      margin: 1rem 0;
+    }
+    code {
+      background: #0f172a;
+      padding: 0.2rem 0.4rem;
+      border-radius: 4px;
+      font-size: 0.85em;
+      color: var(--accent);
+    }
+    footer {
+      text-align: center;
+      margin-top: 3rem;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+    }
+    .lang-content {
+      display: none;
+    }
+    .lang-content.active {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <div class="badge">100% On-Device &bull; Zero Telemetry</div>
+      <h1 id="page-title">Política de Privacidad</h1>
+      <p class="last-updated" id="last-updated">Última actualización: 27 de Octubre de 2026</p>
+      
+      <div class="lang-switcher">
+        <button class="lang-btn active" onclick="switchLang('es')">Español</button>
+        <button class="lang-btn" onclick="switchLang('en')">English</button>
+      </div>
+    </header>
+
+    <!-- CONTENIDO EN ESPAÑOL -->
+    <div id="content-es" class="lang-content active">
+      <div class="card">
+        <h2>🛡️ 1. Principio Fundamental: Privacidad 100% en el Dispositivo</h2>
+        <p>
+          Te damos la bienvenida a <strong>GastoFlow</strong> (localizado internacionalmente como <strong>SpendFlow</strong>), desarrollado por <strong>FVision</strong>.
+          La aplicación está concebida desde su arquitectura base para ser <strong>estrictamente local y offline</strong>.
+        </p>
+        <div class="highlight-box">
+          <p>
+            <strong>Cero Acceso a Internet:</strong> GastoFlow <strong>no declara ni utiliza el permiso <code>android.permission.INTERNET</code></strong>. Está blindada a nivel de código para remover cualquier permiso de red transitivo. Es técnicamente imposible que la app transmita tus datos a servidores externos, bases de datos en la nube o terceros.
+          </p>
+        </div>
+        <ul>
+          <li><strong>Sin registro de usuario:</strong> No requieres crear cuenta, dar correo electrónico ni proporcionar contraseñas o credenciales bancarias.</li>
+          <li><strong>Sin telemetría ni analíticas:</strong> No contiene rastreadores, SDKs de publicidad ni reportes de fallos remotos.</li>
+          <li><strong>Packs de Mecenas opcionales:</strong> Las compras de apoyo se procesan enteramente por el sistema oficial de Google Play Store en tu dispositivo mediante IPC local (<code>com.android.vending.BILLING</code>). Jamás accedemos ni almacenamos datos de tarjetas o facturación.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>📂 2. Información que se Procesa en tu Teléfono</h2>
+        <p>Todos los datos se guardan exclusivamente en el almacenamiento privado y aislado de la aplicación en tu propio dispositivo físico:</p>
+        <ul>
+          <li><strong>Movimientos Financieros:</strong> Montos, monedas, nombres de comercios, categorías, billeteras y fechas que registres o que la IA local detecte.</li>
+          <li><strong>Comprobantes de Pago:</strong> Las capturas de pantalla o imágenes que compartas se almacenan en el directorio privado interno de la app.</li>
+          <li><strong>Ajustes y Preferencias:</strong> Moneda principal, alias de transferencias, modo de tema y ajustes biométricos.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>🔑 3. Permisos Utilizados y Justificación</h2>
+        <ul>
+          <li><code>POST_NOTIFICATIONS</code>: Permite enviarte notificaciones locales cuando se detecta un nuevo gasto o comprobante.</li>
+          <li><code>BIND_NOTIFICATION_LISTENER_SERVICE</code>: Al activarse voluntariamente en Ajustes de Android, permite leer alertas de billeteras y bancos para registrar gastos en segundo plano de manera 100% local.</li>
+          <li><code>READ_MEDIA_IMAGES</code>: Utilizado cuando activas el detector automático de capturas de pantalla para analizar nuevos comprobantes mediante OCR local (Google ML Kit on-device).</li>
+          <li><code>FOREGROUND_SERVICE_SPECIAL_USE</code>: Mantiene activo el observador de comprobantes cuando el usuario habilita la captura continua.</li>
+          <li><code>USE_BIOMETRIC</code>: Invoca el diálogo biométrico oficial de Android (huella o rostro) para bloquear la app. GastoFlow nunca accede a tus datos biométricos directos.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>🗑️ 4. Retención y Eliminación de Datos</h2>
+        <p>
+          Debido a que tus finanzas residen exclusivamente en tu teléfono, tú tienes el control absoluto:
+        </p>
+        <ul>
+          <li>Puedes editar o borrar cualquier movimiento en cualquier momento.</li>
+          <li>Puedes exportar todos tus datos a formato CSV estándar con un solo toque.</li>
+          <li>Desinstalar la aplicación o limpiar sus datos en Ajustes de Android elimina permanentemente todos tus registros y comprobantes.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>⚖️ 5. Aviso Legal y Descargo de Responsabilidad</h2>
+        <p>
+          GastoFlow es un desarrollo independiente de FVision. No está afiliada, autorizada, respaldada ni conectada oficialmente con Mercado Libre, Mercado Pago, Santander, BBVA, Banco Galicia, Ualá, MODO, Cuenta DNI, Lemon Cash, Google LLC ni con ninguna otra entidad bancaria mencionada. Todas las marcas registradas pertenecen a sus respectivos titulares.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>📬 6. Contacto</h2>
+        <p>Para cualquier consulta o comentario acerca de esta política de privacidad, puedes contactarnos a través del repositorio oficial del proyecto o desde el correo de contacto de desarrollador en la ficha de Google Play Store.</p>
+      </div>
+    </div>
+
+    <!-- CONTENIDO EN INGLÉS -->
+    <div id="content-en" class="lang-content">
+      <div class="card">
+        <h2>🛡️ 1. Core Principle: 100% On-Device Privacy</h2>
+        <p>
+          Welcome to <strong>SpendFlow</strong> (localized as <strong>GastoFlow</strong> in Spanish markets), developed by <strong>FVision</strong>.
+          The application is built from the ground up to be <strong>completely local and offline</strong>.
+        </p>
+        <div class="highlight-box">
+          <p>
+            <strong>Zero Internet Access:</strong> SpendFlow <strong>does not declare or use the <code>android.permission.INTERNET</code> permission</strong>. Any transitive network permissions are explicitly stripped at build time. It is technically impossible for the app to transmit your data to external servers, cloud databases, or third parties.
+          </p>
+        </div>
+        <ul>
+          <li><strong>No user accounts:</strong> You don't need to register, provide an email, or share bank login credentials.</li>
+          <li><strong>No telemetry or tracking:</strong> Contains zero analytics SDKs, advertising frameworks, or remote crash loggers.</li>
+          <li><strong>Optional Patron Packs:</strong> Supporter purchases are handled exclusively by the official Google Play Store application on your device via local IPC (<code>com.android.vending.BILLING</code>). We never access or store billing details.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>📂 2. Information Processed on Your Device</h2>
+        <p>All data is stored exclusively in the private, sandboxed app directory on your physical device:</p>
+        <ul>
+          <li><strong>Financial Records:</strong> Amounts, currencies, merchant names, categories, payment methods, and timestamps.</li>
+          <li><strong>Receipt Images:</strong> Screenshots or photos you share or import are stored in the app's internal storage.</li>
+          <li><strong>Preferences:</strong> Primary currency, bank transfer aliases, theme mode, and biometric lock settings.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>🔑 3. Permissions Used and Why</h2>
+        <ul>
+          <li><code>POST_NOTIFICATIONS</code>: Sends local notifications when a new expense or receipt is detected.</li>
+          <li><code>BIND_NOTIFICATION_LISTENER_SERVICE</code>: When voluntarily enabled in Android Settings, parses bank alerts locally to record transactions.</li>
+          <li><code>READ_MEDIA_IMAGES</code>: Used when the automatic screenshot monitor is active to analyze receipts via on-device OCR (Google ML Kit).</li>
+          <li><code>FOREGROUND_SERVICE_SPECIAL_USE</code>: Keeps the silent screenshot observer running when enabled by the user.</li>
+          <li><code>USE_BIOMETRIC</code>: Invokes Android's standard system BiometricPrompt (fingerprint or Face Unlock). SpendFlow never accesses raw biometric data.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>🗑️ 4. Data Retention and Deletion</h2>
+        <p>
+          Because your financial data resides solely on your physical device:
+        </p>
+        <ul>
+          <li>You can edit or delete any expense or category at any time.</li>
+          <li>You can export all records to a clean CSV file in one tap.</li>
+          <li>Uninstalling the app or clearing its data in Android Settings permanently removes all records and stored receipts.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>⚖️ 5. Legal Disclaimer</h2>
+        <p>
+          SpendFlow is an independent application developed by FVision. It is not affiliated, associated, authorized, endorsed by, or in any way officially connected with Google LLC, PayPal, Venmo, Cash App, Revolut, Mercado Pago, Santander, BBVA, or any of their financial subsidiaries. All trademarks and brand names are the property of their respective owners.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>📬 6. Contact</h2>
+        <p>If you have any questions regarding this Privacy Policy, please contact us through the official GitHub repository or via the developer contact email on Google Play Store.</p>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2026 FVision &bull; SpendFlow / GastoFlow &bull; All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script>
+    function switchLang(lang) {
+      document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('.lang-content').forEach(c => c.classList.remove('active'));
+      
+      if (lang === 'es') {
+        document.querySelector('.lang-btn:nth-child(1)').classList.add('active');
+        document.getElementById('content-es').classList.add('active');
+        document.getElementById('page-title').innerText = 'Política de Privacidad';
+        document.getElementById('last-updated').innerText = 'Última actualización: 27 de Octubre de 2026';
+      } else {
+        document.querySelector('.lang-btn:nth-child(2)').classList.add('active');
+        document.getElementById('content-en').classList.add('active');
+        document.getElementById('page-title').innerText = 'Privacy Policy';
+        document.getElementById('last-updated').innerText = 'Last updated: October 27, 2026';
+      }
+    }
+  </script>
+</body>
+</html>
